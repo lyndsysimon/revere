@@ -13,7 +13,7 @@ Requirements
 ============
 
 Revere supports Python 3.3. Additional requirements may be be found in the
-`requirements.txt`.
+``requirements.txt``.
 
 Client API
 ==========
