@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Websockets Tester</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            console.log('opening websocket');
+            ws = new WebSocket("ws://localhost:8888/events");
+            ws.onopen = function() {
+               ws.send("Hello, world");
+            };
+            ws.onmessage = function (evt) {
+               console.log(evt.data)
+            };
+        });
+    </script>
+    </head>
+    <body>
+    </body>
+</html>
