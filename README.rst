@@ -9,6 +9,12 @@ Revere is intended to be used as a relay point, accepting inbound
 notifications via HTTP and relaying them in JSON format to clients
 via Websockets.
 
+Requirements
+============
+
+Revere supports Python 3.3. Additional requirements may be be found in the
+`requirements.txt`.
+
 Client API
 ==========
 
@@ -31,5 +37,3 @@ Each event notification will contain the following elements:
 +------------+---------------+------------------------------------+
 | text       | String        | The text to be displayed           |
 +------------+---------------+------------------------------------+
-
-
